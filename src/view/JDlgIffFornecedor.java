@@ -19,7 +19,60 @@ public class JDlgIffFornecedor extends javax.swing.JDialog {
     public JDlgIffFornecedor(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+     
+                        setTitle("Cadastro de Jogos");
+        setLocationRelativeTo(null);
+        
+        jTxtIffCidade.setEnabled(false);
+        jTxtIffCodigo.setEnabled(false);
+        jTxtIffEmail.setEnabled(false);
+        jTxtIffEndereco.setEnabled(false);
+        jFmtIffCEP.setEnabled(false);
+        jTxtIffEstado.setEnabled(false);
+        jTxtIffCidade.setEnabled(false);
+        jTxtIffEndereco.setEnabled(false);
+        jTxtIffICMS.setEnabled(false);
+        jTxtIffEmail.setEnabled(false);
+        jFmtIffDataCadastro.setEnabled(false);
+        jFmtIffCNPJ.setEnabled(false);
+        jFmtIffDataCadastro.setEnabled(false);
+        jCboIffNivel.setEnabled(false);
+        jTxtIffPais.setEnabled(false);
+        jTxtIffTelefone.setEnabled(false);
+        jTxtIffRepresentante.setEnabled(false);
+        jTxtIffNomeFantasia.setEnabled(false);
+        jTxtIffNomeEmpresa.setEnabled(false);
+        jBtnIffPesquisar.setEnabled(true);
+        jBtnIffExcluir.setEnabled(true);
+        jBtnIffAlterar.setEnabled(true);
+        jBtnIffIncluir.setEnabled(true);
     }
+    public void habilitar(boolean valor){
+        jTxtIffCidade.setEnabled(valor);
+        jTxtIffCodigo.setEnabled(valor);
+        jTxtIffEmail.setEnabled(valor);
+        jTxtIffEndereco.setEnabled(valor);
+        jFmtIffCEP.setEnabled(valor);
+        jTxtIffEstado.setEnabled(valor);
+        jTxtIffCidade.setEnabled(valor);
+        jTxtIffEndereco.setEnabled(valor);
+        jTxtIffICMS.setEnabled(valor);
+        jTxtIffEmail.setEnabled(valor);
+        jFmtIffDataCadastro.setEnabled(valor);
+        jFmtIffCNPJ.setEnabled(valor);
+        jFmtIffDataCadastro.setEnabled(valor);
+        jCboIffNivel.setEnabled(valor);
+        jTxtIffPais.setEnabled(valor);
+        jTxtIffTelefone.setEnabled(valor);
+        jTxtIffRepresentante.setEnabled(valor);
+        jTxtIffNomeFantasia.setEnabled(valor);
+        jTxtIffNomeEmpresa.setEnabled(valor);
+        jBtnIffPesquisar.setEnabled(!valor);
+        jBtnIffExcluir.setEnabled(!valor);
+        jBtnIffAlterar.setEnabled(!valor);
+        jBtnIffIncluir.setEnabled(!valor);
+    }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -108,16 +161,21 @@ public class JDlgIffFornecedor extends javax.swing.JDialog {
 
         jLabel16.setText("ICMS");
 
+        jTxtIffNomeEmpresa.addActionListener(this::jTxtIffNomeEmpresaActionPerformed);
+
         jTxtIffRepresentante.addActionListener(this::jTxtIffRepresentanteActionPerformed);
 
         jBtnIffIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
         jBtnIffIncluir.setText("Incluir");
+        jBtnIffIncluir.addActionListener(this::jBtnIffIncluirActionPerformed);
 
         jBtnIffAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
         jBtnIffAlterar.setText("Alterar");
+        jBtnIffAlterar.addActionListener(this::jBtnIffAlterarActionPerformed);
 
         jBtnIffExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
         jBtnIffExcluir.setText("Excluir");
+        jBtnIffExcluir.addActionListener(this::jBtnIffExcluirActionPerformed);
 
         jBtnIffConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gravar.png"))); // NOI18N
         jBtnIffConfirmar.setText("Confirmar");
@@ -301,6 +359,7 @@ public class JDlgIffFornecedor extends javax.swing.JDialog {
 
     private void jBtnIffConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffConfirmarActionPerformed
         // TODO add your handling code here:
+        habilitar(!rootPaneCheckingEnabled);
     }//GEN-LAST:event_jBtnIffConfirmarActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -309,11 +368,32 @@ public class JDlgIffFornecedor extends javax.swing.JDialog {
 
     private void jBtnIffCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffCancelarActionPerformed
         // TODO add your handling code here:
+        habilitar(!rootPaneCheckingEnabled);
     }//GEN-LAST:event_jBtnIffCancelarActionPerformed
 
     private void jBtnIffPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffPesquisarActionPerformed
         // TODO add your handling code here:
+        habilitar(rootPaneCheckingEnabled);
     }//GEN-LAST:event_jBtnIffPesquisarActionPerformed
+
+    private void jTxtIffNomeEmpresaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtIffNomeEmpresaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTxtIffNomeEmpresaActionPerformed
+
+    private void jBtnIffIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffIncluirActionPerformed
+        // TODO add your handling code here:
+        habilitar(rootPaneCheckingEnabled);
+    }//GEN-LAST:event_jBtnIffIncluirActionPerformed
+
+    private void jBtnIffAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffAlterarActionPerformed
+        // TODO add your handling code here:
+        habilitar(rootPaneCheckingEnabled);
+    }//GEN-LAST:event_jBtnIffAlterarActionPerformed
+
+    private void jBtnIffExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffExcluirActionPerformed
+        // TODO add your handling code here:
+        habilitar(rootPaneCheckingEnabled);
+    }//GEN-LAST:event_jBtnIffExcluirActionPerformed
 
     /**
      * @param args the command line arguments

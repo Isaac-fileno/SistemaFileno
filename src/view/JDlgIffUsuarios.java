@@ -19,7 +19,7 @@ public class JDlgIffUsuarios extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-                setTitle("Cadastro de Jogos");
+                setTitle("Cadastro de Usuarios");
         setLocationRelativeTo(null);
         
         jTxtIffNome.setEnabled(false);
