@@ -4,13 +4,12 @@ package view;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
  */
-
 /**
  *
  * @author zfabi
  */
 public class JDlgIffFornecedor extends javax.swing.JDialog {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JDlgIffFornecedor.class.getName());
 
     /**
@@ -19,10 +18,10 @@ public class JDlgIffFornecedor extends javax.swing.JDialog {
     public JDlgIffFornecedor(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-     
+
         setTitle("Cadastro de Fornecedor");
         setLocationRelativeTo(null);
-        
+
         jTxtIffCidade.setEnabled(false);
         jTxtIffCodigo.setEnabled(false);
         jTxtIffEmail.setEnabled(false);
@@ -47,7 +46,8 @@ public class JDlgIffFornecedor extends javax.swing.JDialog {
         jBtnIffAlterar.setEnabled(true);
         jBtnIffIncluir.setEnabled(true);
     }
-    public void habilitar(boolean valor){
+
+    public void habilitar(boolean valor) {
         jTxtIffCidade.setEnabled(valor);
         jTxtIffCodigo.setEnabled(valor);
         jTxtIffEmail.setEnabled(valor);
@@ -73,7 +73,6 @@ public class JDlgIffFornecedor extends javax.swing.JDialog {
         jBtnIffIncluir.setEnabled(!valor);
     }
 
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -84,7 +83,6 @@ public class JDlgIffFornecedor extends javax.swing.JDialog {
     private void initComponents() {
 
         jTextField5 = new javax.swing.JTextField();
-        jButton5 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -124,8 +122,6 @@ public class JDlgIffFornecedor extends javax.swing.JDialog {
 
         jTextField5.setText("jTextField5");
 
-        jButton5.setText("jButton1");
-        jButton5.addActionListener(this::jButton5ActionPerformed);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -160,10 +156,6 @@ public class JDlgIffFornecedor extends javax.swing.JDialog {
         jLabel15.setText("Nível");
 
         jLabel16.setText("ICMS");
-
-        jTxtIffNomeEmpresa.addActionListener(this::jTxtIffNomeEmpresaActionPerformed);
-
-        jTxtIffRepresentante.addActionListener(this::jTxtIffRepresentanteActionPerformed);
 
         jBtnIffIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
         jBtnIffIncluir.setText("Incluir");
@@ -353,18 +345,10 @@ public class JDlgIffFornecedor extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTxtIffRepresentanteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtIffRepresentanteActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtIffRepresentanteActionPerformed
-
     private void jBtnIffConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffConfirmarActionPerformed
         // TODO add your handling code here:
         habilitar(!rootPaneCheckingEnabled);
     }//GEN-LAST:event_jBtnIffConfirmarActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jBtnIffCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffCancelarActionPerformed
         // TODO add your handling code here:
@@ -375,10 +359,6 @@ public class JDlgIffFornecedor extends javax.swing.JDialog {
         // TODO add your handling code here:
         habilitar(rootPaneCheckingEnabled);
     }//GEN-LAST:event_jBtnIffPesquisarActionPerformed
-
-    private void jTxtIffNomeEmpresaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtIffNomeEmpresaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtIffNomeEmpresaActionPerformed
 
     private void jBtnIffIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffIncluirActionPerformed
         // TODO add your handling code here:
@@ -439,7 +419,6 @@ public class JDlgIffFornecedor extends javax.swing.JDialog {
     private javax.swing.JButton jBtnIffExcluir;
     private javax.swing.JButton jBtnIffIncluir;
     private javax.swing.JButton jBtnIffPesquisar;
-    private javax.swing.JButton jButton5;
     private javax.swing.JComboBox<String> jCboIffNivel;
     private javax.swing.JFormattedTextField jFmtIffCEP;
     private javax.swing.JFormattedTextField jFmtIffCNPJ;

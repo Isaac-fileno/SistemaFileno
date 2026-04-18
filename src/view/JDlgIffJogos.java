@@ -9,7 +9,7 @@ package view;
  * @author zfabi
  */
 public class JDlgIffJogos extends javax.swing.JDialog {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JDlgIffJogos.class.getName());
 
     /**
@@ -20,7 +20,7 @@ public class JDlgIffJogos extends javax.swing.JDialog {
         initComponents();
         setTitle("Cadastro de Jogos");
         setLocationRelativeTo(null);
-        
+
         jTxtIffTitulo.setEnabled(false);
         jTxtIffCodigo.setEnabled(false);
         jTxtIffPreco.setEnabled(false);
@@ -43,7 +43,8 @@ public class JDlgIffJogos extends javax.swing.JDialog {
         jBtnIffAlterar.setEnabled(true);
         jBtnIffIncluir.setEnabled(true);
     }
-    public void habilitar(boolean valor){
+
+    public void habilitar(boolean valor) {
         jTxtIffTitulo.setEnabled(valor);
         jTxtIffCodigo.setEnabled(valor);
         jTxtIffPreco.setEnabled(valor);
@@ -147,10 +148,6 @@ public class JDlgIffJogos extends javax.swing.JDialog {
         jLabel14.setText("Descrição");
 
         jLabel15.setText("Avalaição");
-
-        jFmtIffDataLancamento.addActionListener(this::jFmtIffDataLancamentoActionPerformed);
-
-        jTxtIffDesenvolvedor.addActionListener(this::jTxtIffDesenvolvedorActionPerformed);
 
         jBtnIffIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
         jBtnIffIncluir.setText("Incluir");
@@ -369,10 +366,6 @@ public class JDlgIffJogos extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTxtIffDesenvolvedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtIffDesenvolvedorActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtIffDesenvolvedorActionPerformed
-
     private void jBtnIffConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffConfirmarActionPerformed
         // TODO add your handling code here:
         habilitar(!rootPaneCheckingEnabled);
@@ -387,10 +380,6 @@ public class JDlgIffJogos extends javax.swing.JDialog {
         // TODO add your handling code here:
         habilitar(rootPaneCheckingEnabled);
     }//GEN-LAST:event_jBtnIffPesquisarActionPerformed
-
-    private void jFmtIffDataLancamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFmtIffDataLancamentoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jFmtIffDataLancamentoActionPerformed
 
     private void jBtnIffIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffIncluirActionPerformed
         // TODO add your handling code here:

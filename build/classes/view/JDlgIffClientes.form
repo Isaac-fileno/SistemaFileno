@@ -292,9 +292,6 @@
     <Component class="javax.swing.JTextField" name="jTxtIffCodigo">
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtIffNome">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtIffNomeActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtIffApelido">
     </Component>
@@ -325,9 +322,6 @@
     <Component class="javax.swing.JTextField" name="jTxtIffEndereco">
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtIffNumero">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtIffNumeroActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtIffBairro">
     </Component>
@@ -371,9 +365,6 @@
     <Component class="javax.swing.JFormattedTextField" name="jFmtIffTelefone">
     </Component>
     <Component class="javax.swing.JFormattedTextField" name="jFmtIffCPF">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jFmtIffCPFActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JFormattedTextField" name="jFmtIffRG">
     </Component>
@@ -392,9 +383,6 @@
           </StringArray>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCboIffSexoActionPerformed"/>
-      </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
@@ -408,9 +396,6 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Ativo"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jChbIffAtivoActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel17">
       <Properties>
@@ -418,9 +403,6 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtIffCidade">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtIffCidadeActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBtnIffAlterar">
       <Properties>

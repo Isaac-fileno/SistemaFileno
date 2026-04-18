@@ -19,7 +19,7 @@ public class JFrmIffPrincipal extends javax.swing.JFrame {
         initComponents();
         setTitle("Sistema De Jogos");
         setExtendedState(MAXIMIZED_BOTH);
-        
+
     }
 
     /**

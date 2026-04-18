@@ -367,16 +367,10 @@
     <Component class="javax.swing.JTextField" name="jTxtIffTitulo">
     </Component>
     <Component class="javax.swing.JFormattedTextField" name="jFmtIffDataLancamento">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jFmtIffDataLancamentoActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtIffClassificacao">
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtIffDesenvolvedor">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtIffDesenvolvedorActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtIffEditora">
     </Component>

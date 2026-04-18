@@ -337,9 +337,6 @@
     <Component class="javax.swing.JTextField" name="jTxtIffCodigo">
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtIffNomeEmpresa">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtIffNomeEmpresaActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtIffNomeFantasia">
     </Component>
@@ -358,9 +355,6 @@
     <Component class="javax.swing.JFormattedTextField" name="jFmtIffCEP">
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtIffRepresentante">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtIffRepresentanteActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JFormattedTextField" name="jFmtIffCNPJ">
     </Component>

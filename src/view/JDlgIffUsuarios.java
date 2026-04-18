@@ -9,7 +9,7 @@ package view;
  * @author zfabi
  */
 public class JDlgIffUsuarios extends javax.swing.JDialog {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JDlgIffUsuarios.class.getName());
 
     /**
@@ -18,10 +18,10 @@ public class JDlgIffUsuarios extends javax.swing.JDialog {
     public JDlgIffUsuarios(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-        
-                setTitle("Cadastro de Usuarios");
+
+        setTitle("Cadastro de Usuarios");
         setLocationRelativeTo(null);
-        
+
         jTxtIffNome.setEnabled(false);
         jTxtIffCodigo.setEnabled(false);
         jTxtIffApelido.setEnabled(false);
@@ -46,7 +46,8 @@ public class JDlgIffUsuarios extends javax.swing.JDialog {
         jBtnIffAlterar.setEnabled(true);
         jBtnIffIncluir.setEnabled(true);
     }
-    public void habilitar(boolean valor){
+
+    public void habilitar(boolean valor) {
         jTxtIffNome.setEnabled(valor);
         jTxtIffCodigo.setEnabled(valor);
         jTxtIffApelido.setEnabled(valor);
@@ -63,7 +64,7 @@ public class JDlgIffUsuarios extends javax.swing.JDialog {
         jFmtIffDataNascimento.setEnabled(valor);
         jFmtIffRG.setEnabled(valor);
         jFmtIffTelefone.setEnabled(valor);
-        jPwfSenha.setEnabled(valor);     
+        jPwfSenha.setEnabled(valor);
         jCboIffSexo.setEnabled(valor);
         jChbIffAtivo.setEnabled(valor);
         jBtnIffPesquisar.setEnabled(!valor);
@@ -71,8 +72,6 @@ public class JDlgIffUsuarios extends javax.swing.JDialog {
         jBtnIffAlterar.setEnabled(!valor);
         jBtnIffIncluir.setEnabled(!valor);
     }
-
-
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -137,8 +136,6 @@ public class JDlgIffUsuarios extends javax.swing.JDialog {
 
         jLabel5.setText("Celular");
 
-        jTxtIffNome.addActionListener(this::jTxtIffNomeActionPerformed);
-
         jLabel6.setText("Endereço");
 
         jLabel7.setText("Número");
@@ -146,8 +143,6 @@ public class JDlgIffUsuarios extends javax.swing.JDialog {
         jLabel8.setText("Bairro");
 
         jLabel9.setText("CEP");
-
-        jTxtIffNumero.addActionListener(this::jTxtIffNumeroActionPerformed);
 
         jLabel10.setText("CPF");
 
@@ -163,19 +158,13 @@ public class JDlgIffUsuarios extends javax.swing.JDialog {
 
         jLabel16.setText("Telefone");
 
-        jFmtIffCPF.addActionListener(this::jFmtIffCPFActionPerformed);
-
         jCboIffSexo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jCboIffSexo.addActionListener(this::jCboIffSexoActionPerformed);
 
         jPwfSenha.setText("jPasswordField1");
 
         jChbIffAtivo.setText("Ativo");
-        jChbIffAtivo.addActionListener(this::jChbIffAtivoActionPerformed);
 
         jLabel17.setText("Cidade");
-
-        jTxtIffCidade.addActionListener(this::jTxtIffCidadeActionPerformed);
 
         jBtnIffAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
         jBtnIffAlterar.setText("Alterar");
@@ -394,30 +383,6 @@ public class JDlgIffUsuarios extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jTxtIffNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtIffNomeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtIffNomeActionPerformed
-
-    private void jChbIffAtivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChbIffAtivoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jChbIffAtivoActionPerformed
-
-    private void jTxtIffCidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtIffCidadeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtIffCidadeActionPerformed
-
-    private void jTxtIffNumeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtIffNumeroActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtIffNumeroActionPerformed
-
-    private void jFmtIffCPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFmtIffCPFActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jFmtIffCPFActionPerformed
-
-    private void jCboIffSexoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCboIffSexoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCboIffSexoActionPerformed
 
     private void jBtnIffPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffPesquisarActionPerformed
         // TODO add your handling code here:
