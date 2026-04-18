@@ -18,7 +18,61 @@ public class JDlgIffUsuarios extends javax.swing.JDialog {
     public JDlgIffUsuarios(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        
+                setTitle("Cadastro de Jogos");
+        setLocationRelativeTo(null);
+        
+        jTxtIffNome.setEnabled(false);
+        jTxtIffCodigo.setEnabled(false);
+        jTxtIffApelido.setEnabled(false);
+        jTxtIffBairro.setEnabled(false);
+        jFmtIffCPF.setEnabled(false);
+        jTxtIffBairro.setEnabled(false);
+        jTxtIffCidade.setEnabled(false);
+        jTxtIffEndereco.setEnabled(false);
+        jTxtIffNumero.setEnabled(false);
+        jTxtIffEmail.setEnabled(false);
+        jFmtIffCEP.setEnabled(false);
+        jFmtIffCelular.setEnabled(false);
+        jFmtIffDataCadastro.setEnabled(false);
+        jFmtIffDataNascimento.setEnabled(false);
+        jFmtIffRG.setEnabled(false);
+        jFmtIffTelefone.setEnabled(false);
+        jPwfSenha.setEnabled(false);
+        jCboIffSexo.setEnabled(false);
+        jChbIffAtivo.setEnabled(false);
+        jBtnIffPesquisar.setEnabled(true);
+        jBtnIffExcluir.setEnabled(true);
+        jBtnIffAlterar.setEnabled(true);
+        jBtnIffIncluir.setEnabled(true);
     }
+    public void habilitar(boolean valor){
+        jTxtIffNome.setEnabled(valor);
+        jTxtIffCodigo.setEnabled(valor);
+        jTxtIffApelido.setEnabled(valor);
+        jTxtIffBairro.setEnabled(valor);
+        jFmtIffCPF.setEnabled(valor);
+        jTxtIffBairro.setEnabled(valor);
+        jTxtIffCidade.setEnabled(valor);
+        jTxtIffEndereco.setEnabled(valor);
+        jTxtIffNumero.setEnabled(valor);
+        jTxtIffEmail.setEnabled(valor);
+        jFmtIffCEP.setEnabled(valor);
+        jFmtIffCelular.setEnabled(valor);
+        jFmtIffDataCadastro.setEnabled(valor);
+        jFmtIffDataNascimento.setEnabled(valor);
+        jFmtIffRG.setEnabled(valor);
+        jFmtIffTelefone.setEnabled(valor);
+        jPwfSenha.setEnabled(valor);     
+        jCboIffSexo.setEnabled(valor);
+        jChbIffAtivo.setEnabled(valor);
+        jBtnIffPesquisar.setEnabled(!valor);
+        jBtnIffExcluir.setEnabled(!valor);
+        jBtnIffAlterar.setEnabled(!valor);
+        jBtnIffIncluir.setEnabled(!valor);
+    }
+
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -64,12 +118,12 @@ public class JDlgIffUsuarios extends javax.swing.JDialog {
         jChbIffAtivo = new javax.swing.JCheckBox();
         jLabel17 = new javax.swing.JLabel();
         jTxtIffCidade = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        jBtnIffAlterar = new javax.swing.JButton();
+        jBtnIffExcluir = new javax.swing.JButton();
+        jBtnIffIncluir = new javax.swing.JButton();
+        jBtnIffConfirmar = new javax.swing.JButton();
+        jBtnIffPesquisar = new javax.swing.JButton();
+        jBtnIffCancelar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -123,23 +177,29 @@ public class JDlgIffUsuarios extends javax.swing.JDialog {
 
         jTxtIffCidade.addActionListener(this::jTxtIffCidadeActionPerformed);
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
-        jButton1.setText("Alterar");
+        jBtnIffAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
+        jBtnIffAlterar.setText("Alterar");
+        jBtnIffAlterar.addActionListener(this::jBtnIffAlterarActionPerformed);
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
-        jButton2.setText("Excluir");
+        jBtnIffExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
+        jBtnIffExcluir.setText("Excluir");
+        jBtnIffExcluir.addActionListener(this::jBtnIffExcluirActionPerformed);
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
-        jButton3.setText("Incluir");
+        jBtnIffIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
+        jBtnIffIncluir.setText("Incluir");
+        jBtnIffIncluir.addActionListener(this::jBtnIffIncluirActionPerformed);
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gravar.png"))); // NOI18N
-        jButton4.setText("Confirmar");
+        jBtnIffConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gravar.png"))); // NOI18N
+        jBtnIffConfirmar.setText("Confirmar");
+        jBtnIffConfirmar.addActionListener(this::jBtnIffConfirmarActionPerformed);
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
-        jButton5.setText("Pesquisar");
+        jBtnIffPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
+        jBtnIffPesquisar.setText("Pesquisar");
+        jBtnIffPesquisar.addActionListener(this::jBtnIffPesquisarActionPerformed);
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
-        jButton6.setText("Cancelar");
+        jBtnIffCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
+        jBtnIffCancelar.setText("Cancelar");
+        jBtnIffCancelar.addActionListener(this::jBtnIffCancelarActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -248,17 +308,17 @@ public class JDlgIffUsuarios extends javax.swing.JDialog {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(14, 14, 14)
-                        .addComponent(jButton3)
+                        .addComponent(jBtnIffIncluir)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
-                        .addComponent(jButton1)
+                        .addComponent(jBtnIffAlterar)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton2)
+                        .addComponent(jBtnIffExcluir)
                         .addGap(29, 29, 29)
-                        .addComponent(jButton4)
+                        .addComponent(jBtnIffConfirmar)
                         .addGap(40, 40, 40)
-                        .addComponent(jButton6)
+                        .addComponent(jBtnIffCancelar)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton5)
+                        .addComponent(jBtnIffPesquisar)
                         .addGap(215, 215, 215))))
         );
         layout.setVerticalGroup(
@@ -307,12 +367,12 @@ public class JDlgIffUsuarios extends javax.swing.JDialog {
                         .addComponent(jFmtIffDataCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
+                            .addComponent(jBtnIffAlterar)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jButton4)
-                                .addComponent(jButton6)
-                                .addComponent(jButton5)
-                                .addComponent(jButton2)))
+                                .addComponent(jBtnIffConfirmar)
+                                .addComponent(jBtnIffCancelar)
+                                .addComponent(jBtnIffPesquisar)
+                                .addComponent(jBtnIffExcluir)))
                         .addGap(19, 19, 19))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(8, 8, 8)
@@ -328,7 +388,7 @@ public class JDlgIffUsuarios extends javax.swing.JDialog {
                             .addComponent(jPwfSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jChbIffAtivo))
                         .addGap(18, 18, 18)
-                        .addComponent(jButton3)
+                        .addComponent(jBtnIffIncluir)
                         .addContainerGap(19, Short.MAX_VALUE))))
         );
 
@@ -358,6 +418,36 @@ public class JDlgIffUsuarios extends javax.swing.JDialog {
     private void jCboIffSexoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCboIffSexoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCboIffSexoActionPerformed
+
+    private void jBtnIffPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffPesquisarActionPerformed
+        // TODO add your handling code here:
+        habilitar(rootPaneCheckingEnabled);
+    }//GEN-LAST:event_jBtnIffPesquisarActionPerformed
+
+    private void jBtnIffIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffIncluirActionPerformed
+        // TODO add your handling code here:
+        habilitar(rootPaneCheckingEnabled);
+    }//GEN-LAST:event_jBtnIffIncluirActionPerformed
+
+    private void jBtnIffAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffAlterarActionPerformed
+        // TODO add your handling code here:
+        habilitar(rootPaneCheckingEnabled);
+    }//GEN-LAST:event_jBtnIffAlterarActionPerformed
+
+    private void jBtnIffExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffExcluirActionPerformed
+        // TODO add your handling code here:
+        habilitar(rootPaneCheckingEnabled);
+    }//GEN-LAST:event_jBtnIffExcluirActionPerformed
+
+    private void jBtnIffConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffConfirmarActionPerformed
+        // TODO add your handling code here:
+        habilitar(!rootPaneCheckingEnabled);
+    }//GEN-LAST:event_jBtnIffConfirmarActionPerformed
+
+    private void jBtnIffCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffCancelarActionPerformed
+        // TODO add your handling code here:
+        habilitar(!rootPaneCheckingEnabled);
+    }//GEN-LAST:event_jBtnIffCancelarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -397,12 +487,12 @@ public class JDlgIffUsuarios extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jBtnIffAlterar;
+    private javax.swing.JButton jBtnIffCancelar;
+    private javax.swing.JButton jBtnIffConfirmar;
+    private javax.swing.JButton jBtnIffExcluir;
+    private javax.swing.JButton jBtnIffIncluir;
+    private javax.swing.JButton jBtnIffPesquisar;
     private javax.swing.JComboBox<String> jCboIffSexo;
     private javax.swing.JCheckBox jChbIffAtivo;
     private javax.swing.JFormattedTextField jFmtIffCEP;
