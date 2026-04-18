@@ -20,7 +20,7 @@ public class JDlgIffFornecedor extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
      
-                        setTitle("Cadastro de Jogos");
+        setTitle("Cadastro de Fornecedor");
         setLocationRelativeTo(null);
         
         jTxtIffCidade.setEnabled(false);
