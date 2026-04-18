@@ -90,7 +90,7 @@ public class JFrmIffPrincipal extends javax.swing.JFrame {
         jMnuMovimentos.add(jMniVendas);
 
         jMniVendasItens.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.SHIFT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMniVendasItens.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/vendas_itens.png"))); // NOI18N
+        jMniVendasItens.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/vendas (1).png"))); // NOI18N
         jMniVendasItens.setText("Vendas Jogos");
         jMnuMovimentos.add(jMniVendasItens);
 
@@ -100,7 +100,7 @@ public class JFrmIffPrincipal extends javax.swing.JFrame {
         jMnuMovimentos.add(jMniCompras);
 
         jMniItensCompra.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMniItensCompra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/itens_compra.png"))); // NOI18N
+        jMniItensCompra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/vendas.png"))); // NOI18N
         jMniItensCompra.setText("Compras Jogos");
         jMnuMovimentos.add(jMniItensCompra);
         jMnuMovimentos.add(jSeparator2);

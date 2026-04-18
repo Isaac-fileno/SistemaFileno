@@ -105,7 +105,7 @@
                   <KeyStroke key="Shift+Ctrl+V"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagens/vendas_itens.png"/>
+                  <Image iconType="3" name="/imagens/vendas (1).png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Vendas Jogos"/>
               </Properties>
@@ -127,7 +127,7 @@
                   <KeyStroke key="Ctrl+I"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagens/itens_compra.png"/>
+                  <Image iconType="3" name="/imagens/vendas.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Compras Jogos"/>
               </Properties>

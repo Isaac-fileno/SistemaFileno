@@ -113,7 +113,7 @@
                                               <Group type="102" attributes="0">
                                                   <Component id="jTxtIffPreco" min="-2" pref="77" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="jFormattedTextField1" min="-2" pref="134" max="-2" attributes="0"/>
+                                                  <Component id="jFmtIffDataLancamento" min="-2" pref="134" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -125,37 +125,41 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jBtnIffIncluir" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                              <Component id="jTxtIffDisponivel" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jBtnIffIncluir" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                           </Group>
+                          <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jTxtIffTamanho" alignment="0" min="-2" pref="79" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                              <Component id="jTxtIffDisponivel" min="-2" pref="105" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                               <Component id="jTxtIffIdiomas" min="-2" pref="80" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTxtIffDescricao" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jBtnIffAlterar" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTxtIffDescricao" alignment="0" min="-2" pref="106" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jTxtIffAvaliacao" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
-                                      </Group>
+                                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                                      <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                                       <Component id="jBtnIffExcluir" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jTxtIffAvaliacao" min="-2" pref="74" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -195,7 +199,7 @@
                   <Component id="jTxtIffCodigo" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTxtIffPreco" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTxtIffTitulo" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jFormattedTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jFmtIffDataLancamento" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
@@ -362,10 +366,10 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtIffTitulo">
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFormattedTextField1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jFormattedTextField1"/>
-      </Properties>
+    <Component class="javax.swing.JFormattedTextField" name="jFmtIffDataLancamento">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jFmtIffDataLancamentoActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtIffClassificacao">
     </Component>
@@ -399,6 +403,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Incluir"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnIffIncluirActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBtnIffAlterar">
       <Properties>
@@ -407,6 +414,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Alterar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnIffAlterarActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBtnIffExcluir">
       <Properties>
@@ -415,6 +425,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Exluir"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnIffExcluirActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBtnIffConfirmar">
       <Properties>

@@ -18,6 +18,53 @@ public class JDlgIffJogos extends javax.swing.JDialog {
     public JDlgIffJogos(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        setTitle("Cadastro de Jogos");
+        setLocationRelativeTo(null);
+        
+        jTxtIffTitulo.setEnabled(false);
+        jTxtIffCodigo.setEnabled(false);
+        jTxtIffPreco.setEnabled(false);
+        jTxtIffPlataforma.setEnabled(false);
+        jFmtIffDataLancamento.setEnabled(false);
+        jTxtIffClassificacao.setEnabled(false);
+        jTxtIffDesenvolvedor.setEnabled(false);
+        jTxtIffEditora.setEnabled(false);
+        jTxtIffGenero.setEnabled(false);
+        jTxtIffEmail.setEnabled(false);
+        jTxtIffIdiomas.setEnabled(false);
+        jTxtIffTamanho.setEnabled(false);
+        jTxtIffDisponivel.setEnabled(false);
+        jTxtIffDescricao.setEnabled(false);
+        jTxtIffAvaliacao.setEnabled(false);
+        jBtnIffConfirmar.setEnabled(false);
+        jBtnIffCancelar.setEnabled(false);
+        jBtnIffPesquisar.setEnabled(true);
+        jBtnIffExcluir.setEnabled(true);
+        jBtnIffAlterar.setEnabled(true);
+        jBtnIffIncluir.setEnabled(true);
+    }
+    public void habilitar(boolean valor){
+        jTxtIffTitulo.setEnabled(valor);
+        jTxtIffCodigo.setEnabled(valor);
+        jTxtIffPreco.setEnabled(valor);
+        jTxtIffPlataforma.setEnabled(valor);
+        jFmtIffDataLancamento.setEnabled(valor);
+        jTxtIffClassificacao.setEnabled(valor);
+        jTxtIffDesenvolvedor.setEnabled(valor);
+        jTxtIffEditora.setEnabled(valor);
+        jTxtIffGenero.setEnabled(valor);
+        jTxtIffEmail.setEnabled(valor);
+        jTxtIffIdiomas.setEnabled(valor);
+        jTxtIffTamanho.setEnabled(valor);
+        jTxtIffDisponivel.setEnabled(valor);
+        jTxtIffDescricao.setEnabled(valor);
+        jTxtIffAvaliacao.setEnabled(valor);
+        jBtnIffConfirmar.setEnabled(valor);
+        jBtnIffCancelar.setEnabled(valor);
+        jBtnIffPesquisar.setEnabled(!valor);
+        jBtnIffExcluir.setEnabled(!valor);
+        jBtnIffAlterar.setEnabled(!valor);
+        jBtnIffIncluir.setEnabled(!valor);
     }
 
     /**
@@ -48,7 +95,7 @@ public class JDlgIffJogos extends javax.swing.JDialog {
         jTxtIffCodigo = new javax.swing.JTextField();
         jTxtIffPreco = new javax.swing.JTextField();
         jTxtIffTitulo = new javax.swing.JTextField();
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
+        jFmtIffDataLancamento = new javax.swing.JFormattedTextField();
         jTxtIffClassificacao = new javax.swing.JTextField();
         jTxtIffDesenvolvedor = new javax.swing.JTextField();
         jTxtIffEditora = new javax.swing.JTextField();
@@ -101,18 +148,21 @@ public class JDlgIffJogos extends javax.swing.JDialog {
 
         jLabel15.setText("Avalaição");
 
-        jFormattedTextField1.setText("jFormattedTextField1");
+        jFmtIffDataLancamento.addActionListener(this::jFmtIffDataLancamentoActionPerformed);
 
         jTxtIffDesenvolvedor.addActionListener(this::jTxtIffDesenvolvedorActionPerformed);
 
         jBtnIffIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
         jBtnIffIncluir.setText("Incluir");
+        jBtnIffIncluir.addActionListener(this::jBtnIffIncluirActionPerformed);
 
         jBtnIffAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
         jBtnIffAlterar.setText("Alterar");
+        jBtnIffAlterar.addActionListener(this::jBtnIffAlterarActionPerformed);
 
         jBtnIffExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
         jBtnIffExcluir.setText("Exluir");
+        jBtnIffExcluir.addActionListener(this::jBtnIffExcluirActionPerformed);
 
         jBtnIffConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/gravar.png"))); // NOI18N
         jBtnIffConfirmar.setText("Confirmar");
@@ -196,35 +246,38 @@ public class JDlgIffJogos extends javax.swing.JDialog {
                                                 .addGroup(layout.createSequentialGroup()
                                                     .addComponent(jTxtIffPreco, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                    .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                                    .addComponent(jFmtIffDataLancamento, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jBtnIffIncluir)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jBtnIffIncluir)
+                                .addGap(20, 20, 20))
                             .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTxtIffTamanho, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addGap(6, 6, 6)
-                                .addComponent(jTxtIffDisponivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTxtIffTamanho, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jTxtIffDisponivel, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(32, 32, 32)
+                                .addGap(12, 12, 12)
                                 .addComponent(jTxtIffIdiomas, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(61, 61, 61)
+                                .addGap(41, 41, 41)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel14)
-                                    .addComponent(jTxtIffDescricao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jBtnIffAlterar))
+                                    .addComponent(jBtnIffAlterar)
+                                    .addComponent(jTxtIffDescricao, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGap(57, 57, 57)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jTxtIffAvaliacao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel15)))
+                                        .addGap(44, 44, 44)
+                                        .addComponent(jLabel15))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGap(45, 45, 45)
-                                        .addComponent(jBtnIffExcluir)))))
+                                        .addGap(32, 32, 32)
+                                        .addComponent(jBtnIffExcluir))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTxtIffAvaliacao, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -251,7 +304,7 @@ public class JDlgIffJogos extends javax.swing.JDialog {
                     .addComponent(jTxtIffCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTxtIffPreco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTxtIffTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jFmtIffDataLancamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -322,15 +375,37 @@ public class JDlgIffJogos extends javax.swing.JDialog {
 
     private void jBtnIffConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffConfirmarActionPerformed
         // TODO add your handling code here:
+        habilitar(!rootPaneCheckingEnabled);
     }//GEN-LAST:event_jBtnIffConfirmarActionPerformed
 
     private void jBtnIffCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffCancelarActionPerformed
         // TODO add your handling code here:
+        habilitar(!rootPaneCheckingEnabled);
     }//GEN-LAST:event_jBtnIffCancelarActionPerformed
 
     private void jBtnIffPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffPesquisarActionPerformed
         // TODO add your handling code here:
+        habilitar(rootPaneCheckingEnabled);
     }//GEN-LAST:event_jBtnIffPesquisarActionPerformed
+
+    private void jFmtIffDataLancamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFmtIffDataLancamentoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jFmtIffDataLancamentoActionPerformed
+
+    private void jBtnIffIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffIncluirActionPerformed
+        // TODO add your handling code here:
+        habilitar(rootPaneCheckingEnabled);
+    }//GEN-LAST:event_jBtnIffIncluirActionPerformed
+
+    private void jBtnIffAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffAlterarActionPerformed
+        // TODO add your handling code here:
+        habilitar(rootPaneCheckingEnabled);
+    }//GEN-LAST:event_jBtnIffAlterarActionPerformed
+
+    private void jBtnIffExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIffExcluirActionPerformed
+        // TODO add your handling code here:
+        habilitar(rootPaneCheckingEnabled);
+    }//GEN-LAST:event_jBtnIffExcluirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -376,7 +451,7 @@ public class JDlgIffJogos extends javax.swing.JDialog {
     private javax.swing.JButton jBtnIffExcluir;
     private javax.swing.JButton jBtnIffIncluir;
     private javax.swing.JButton jBtnIffPesquisar;
-    private javax.swing.JFormattedTextField jFormattedTextField1;
+    private javax.swing.JFormattedTextField jFmtIffDataLancamento;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
