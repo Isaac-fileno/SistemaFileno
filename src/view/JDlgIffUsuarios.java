@@ -43,6 +43,8 @@ public class JDlgIffUsuarios extends javax.swing.JDialog {
         jChbIffAtivo.setEnabled(false);
         jBtnIffPesquisar.setEnabled(true);
         jBtnIffExcluir.setEnabled(true);
+        jBtnIffConfirmar.setEnabled(false);
+        jBtnIffCancelar.setEnabled(false);
         jBtnIffAlterar.setEnabled(true);
         jBtnIffIncluir.setEnabled(true);
     }
@@ -68,6 +70,8 @@ public class JDlgIffUsuarios extends javax.swing.JDialog {
         jCboIffSexo.setEnabled(valor);
         jChbIffAtivo.setEnabled(valor);
         jBtnIffPesquisar.setEnabled(!valor);
+        jBtnIffConfirmar.setEnabled(valor);
+        jBtnIffCancelar.setEnabled(valor);
         jBtnIffExcluir.setEnabled(!valor);
         jBtnIffAlterar.setEnabled(!valor);
         jBtnIffIncluir.setEnabled(!valor);

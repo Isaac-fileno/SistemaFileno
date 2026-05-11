@@ -43,6 +43,8 @@ public class JDlgIffClientes extends javax.swing.JDialog {
         jBtnIffPesquisar.setEnabled(true);
         jBtnIffExcluir.setEnabled(true);
         jBtnIffAlterar.setEnabled(true);
+        jBtnIffCancelar.setEnabled(false);
+        jBtnIffConfirmar.setEnabled(false);
         jBtnIffPesquisar.setEnabled(true);
     }
     
@@ -67,9 +69,12 @@ public class JDlgIffClientes extends javax.swing.JDialog {
         jCboIffSexo.setEnabled(valor);
         jChbIffAtivo.setEnabled(valor);
         jBtnIffPesquisar.setEnabled(!valor);
+        jBtnIffIncluir.setEnabled(!valor);
         jBtnIffExcluir.setEnabled(!valor);
         jBtnIffAlterar.setEnabled(!valor);
         jBtnIffPesquisar.setEnabled(!valor);
+        jBtnIffCancelar.setEnabled(valor);
+        jBtnIffConfirmar.setEnabled(valor);
     }
 
     /**

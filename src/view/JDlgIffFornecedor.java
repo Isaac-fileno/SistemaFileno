@@ -43,6 +43,8 @@ public class JDlgIffFornecedor extends javax.swing.JDialog {
         jTxtIffNomeEmpresa.setEnabled(false);
         jBtnIffPesquisar.setEnabled(true);
         jBtnIffExcluir.setEnabled(true);
+        jBtnIffConfirmar.setEnabled(false);
+        jBtnIffCancelar.setEnabled(false);
         jBtnIffAlterar.setEnabled(true);
         jBtnIffIncluir.setEnabled(true);
     }
@@ -71,6 +73,8 @@ public class JDlgIffFornecedor extends javax.swing.JDialog {
         jBtnIffExcluir.setEnabled(!valor);
         jBtnIffAlterar.setEnabled(!valor);
         jBtnIffIncluir.setEnabled(!valor);
+        jBtnIffCancelar.setEnabled(valor);
+        jBtnIffConfirmar.setEnabled(valor);
     }
 
     /**
