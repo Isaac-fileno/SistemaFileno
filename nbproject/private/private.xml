@@ -6,28 +6,10 @@
             <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/view/JDlgIffUsuarios.java</file>
             <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/view/JDlgIffClientes.java</file>
             <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/view/JDlgIffFornecedor.java</file>
-            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/bean/iff_usuario.java</file>
-            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/bean/iff_clientes.java</file>
-            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/bean/iff_jogos.java</file>
-            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/bean/iff_vendas.java</file>
-            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/bean/iff_compras.java</file>
-            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/bean/iff_fornecedor.java</file>
-            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/bean/iff_vendas_itens.java</file>
-            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/bean/iff_compras_itens.java</file>
-            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/bean/iff_categoria.java</file>
-            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/dao/DaoIffAbstract.java</file>
-            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/dao/DaoIffUsuario.java</file>
-            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/dao/DaoIffClientes.java</file>
-            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/dao/DaoIffJogos.java</file>
-            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/dao/DaoIffFornecedor.java</file>
-            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/dao/DaoIffCompras.java</file>
-            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/dao/DaoIffVendas.java</file>
-            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/dao/DaoIffCategoria.java</file>
-            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/dao/DaoIffComprasItens.java</file>
-            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/dao/DaoIffVendasItens.java</file>
             <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/view/JFrmIffPrincipal.java</file>
             <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/view/JDlgIffJogos.java</file>
             <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/view/JFrmIffLogin.java</file>
+            <file>file:/C:/Users/zfabi/OneDrive/Documentos/NetBeansProjects/SistemaFileno/src/view/JDlgIffCategoria.java</file>
         </group>
     </open-files>
 </project-private>
